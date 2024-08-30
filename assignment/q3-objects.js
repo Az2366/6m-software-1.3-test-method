@@ -18,6 +18,11 @@ let booksObj = {};
 function convert(keyArr, valueArr){
     
     // Add code here
+    let obj = {};
+    for(let i = 0; i < keyArr.length; i++){
+        obj[keyArr[i]] = valueArr[i];
+    }
+    return obj;
     /*
         Tips:
         - Step 1: Create a local scoped object literal.

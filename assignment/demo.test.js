@@ -9,6 +9,7 @@ describe("Demo", ()=>{
     //it() describes a single test
     it("should test the printStudentNames function of q2", ()=>{
         //The spyOn creates a mock function based on the method inside, in this case console.log
+        //spy function is to keep track console.log
         const spyFn = jest.spyOn(console, "log");
         printStudentNames();
         //Methods can be chained to check if values meet certain conditions
