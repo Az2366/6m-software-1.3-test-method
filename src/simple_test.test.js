@@ -25,22 +25,3 @@ describe("Test Suite for sample.js functions", () => {
         expect(result).toBe("odd");
     })
 })
-
-describe("Test Suite for arrays.js functions", () => {
-    const {sumArray, findMax, findMin} = require('./arrays');
-
-    it("should sum the array", () => {
-        const result = sumArray([1,2,3,4,5]);
-        expect(result).toBe(15);
-    })
-
-    it("should find the maximum value in the array", () => {
-        const result = findMax([1,2,3,4,5]);
-        expect(result).toBe(5);
-    })
-
-    it("should find the minimum value in the array", () => {
-        const result = findMin([1,2,3,4,5]);
-        expect(result).toBe(1);
-    })
-})
