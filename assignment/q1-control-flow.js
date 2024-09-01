@@ -13,4 +13,22 @@ let databaseCredential = "devuser:password";
 // Task: Add code here
 
 
+function setDatabaseCredential(env) {
+    switch(env) {
+        case "DEV":
+            break;
+        case "STAGE":
+            databaseCredential = "stageuser:password";
+            break;
+        case "PROD":
+            databaseCredential = "produser:password";
+            break;
+        default:
+            console.log("Invalid environment");
+    }
+    return databaseCredential;
+}
+
 console.log(`Database credential for environment ${env} is ${databaseCredential}`);
+
+module.exports = { setDatabaseCredential };
