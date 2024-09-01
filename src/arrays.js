@@ -49,7 +49,8 @@ const arr2 = [13, 2, 6, 7];
 */
 const arr1 = [15, 12, 11, 29, 5];
 const arr2 = [13, 2, 6, 7];
-const arrCombine =[...arr1, ...arr2]
+const combinedArray = arr1.concat(arr2);
+const oddNumbers = combinedArray.filter(number => number % 2 !== 0);
+console.log("Odd numbers from the combined array:", oddNumbers);
 
-console.log(arrCombine);
 
